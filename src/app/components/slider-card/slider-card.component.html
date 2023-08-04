@@ -1,0 +1,21 @@
+
+<div #mapContainer  style="height: 400px;"></div>
+
+<swiper-container #swiperContainer loop (slidechange)="onSlideChange($event)" 
+class="swiper-container custom-swiper-container overlay-swiper" >
+  <swiper-slide *ngFor="let item of swiperItems; let i = index;">
+    <app-card 
+       *ngIf="itemSelect == null"
+      class="full-width-card"
+      [item]="item"></app-card>
+    <app-card 
+      *ngIf="itemSelect != null"
+      class="full-width-card"
+      [item]="itemSelect"></app-card>
+  </swiper-slide>
+</swiper-container>
+
+
+
+
+

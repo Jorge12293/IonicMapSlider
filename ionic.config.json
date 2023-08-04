@@ -1,0 +1,7 @@
+{
+  "name": "AppWebIonicSlider",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
